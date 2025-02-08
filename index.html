@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student CGPA Calculator</title>
+    <link rel="stylesheet" href="style.css">                                                                                                    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.25/jspdf.plugin.autotable.min.js"></script>
+</head>
+<body>
+
+    <h1>SAIRAM Student CGPA Calculator</h1>
+    
+    <div class="input-card">
+        <h2>Enter Details</h2>
+
+        <label>Semester:</label>
+        <input type="number" id="semester" min="1" required>
+
+        <label>Subject Name:</label>
+        <input type="text" id="subject" required>
+
+        <label>Grade:</label>
+        <select id="grade">
+            <option value="O">O</option>
+            <option value="A+">A+</option>
+            <option value="A">A</option>
+            <option value="B+">B+</option>
+            <option value="B">B</option>
+            <option value="C">C</option>
+            <option value="RA">RA (Reappear)</option>
+        </select>
+
+        <label>Credit:</label>
+        <input type="number" id="credit" step="0.1" min="1" required>
+
+        <button id="addSubject" class="add-btn">Add Subject</button>
+    </div>
+
+    <div id="semesterTables"></div>
+
+    <h2>Total CGPA: <span id="cgpa">0.0000</span></h2>
+
+    <button id="calculateCGPA" class="calculate-btn">Calculate CGPA</button>
+    <button id="downloadPDF" class="download-btn">Download Report (PDF)</button>
+    <button id="resetForm" class="reset-btn">Reset</button>
+
+    <script src="script.js"></script>
+</body>
+</html>

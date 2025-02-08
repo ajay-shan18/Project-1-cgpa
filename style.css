@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.input-card {
+    background-color: #e8f5e9;
+    border: 2px solid #4caf50;
+    padding: 15px;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input, select, button {
+    padding: 10px;
+    width: 100%;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.add-btn {
+    background-color: #4caf50;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    width: 50%;
+    margin: 15px auto;
+}
+
+.add-btn:hover {
+    background-color: #388e3c;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.calculate-btn, .download-btn, .reset-btn {
+    padding: 10px;
+    width: 30%;
+    margin: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.calculate-btn { background-color: blue; color: white; }
+.download-btn { background-color: green; color: white; }
+.reset-btn { background-color: grey; color: white; }
+
+#darkModeToggle {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.dark-mode .input-card {
+    background-color: #222;
+    border-color: green;
+}
+
+.dark-mode table th {
+    background-color: green;
+}
+
+.dark-mode button {
+    color: black;
+}
